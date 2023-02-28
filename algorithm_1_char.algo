@@ -1,0 +1,39 @@
+ALGORITHM char_in_string
+VAR
+    ch:STRING
+    nbc:INTEGER:=0
+    i:INTEGER:=0
+    l:INTEGER:=0
+BEGIN
+    REPEAT
+        Read(ch)
+        l=ch.lenght()
+    UNTIL (ch[l-1]==".")
+
+    FOR i FROM 0 TO l-1 STEP 1  DO
+        if ch.charAt(i) != " " then 
+            nbc=nbc+1
+    END_FOR   
+    Write(nbc)
+END
+
+
+
+ALGORITHM vowels
+VAR
+    vowel="aeoiuyAEOIUY"
+    ch:STRING
+    i:INTEGER:=0
+    j:INTEGER:=0
+    nbv:INTEGER:=0
+BEGIN
+    Read(vowels)
+    FOR i FROM 0 TO l-1 STEP 1  DO
+        FOR j FROM 0 TO 11 STEP 1  DO
+            IF(ch.charAt(i)==vowel.charAt(j)) THEN
+                nbv=nbv+1
+        END_IF
+        END_FOR
+        
+    END_FOR
+END
